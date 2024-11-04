@@ -68,13 +68,13 @@ fn main() -> Result<()> {
     if cfg.link == LinkType::Static {
         if cfg!(target_os = "linux") {
             let _ = ocipkg::link_package(&format!(
-                "ghcr.io/rust-math/rust-mkl/linux/{}:2020.1-3038006115",
+                "ghcr.io/someone13574/rust-mkl/linux/{}:2025.0-11668674029",
                 MKL_CONFIG
             ));
         }
         if cfg!(target_os = "windows") {
             let _ = ocipkg::link_package(&format!(
-                "ghcr.io/rust-math/rust-mkl/windows/{}:2022.0-3038006115",
+                "ghcr.io/someone13574/rust-mkl/windows/{}:2025.0-11668674029",
                 MKL_CONFIG
             ));
         }
